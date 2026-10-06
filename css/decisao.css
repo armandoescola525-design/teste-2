@@ -1,0 +1,42 @@
+@import url('global.css');
+
+body {
+    background: url('../imagem/img-geral/capa.png') no-repeat center/cover fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container-decisao-Killer_Survivor {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card-decisao-Killer_Survivor {
+    width: 220px;
+    height: 160px;
+    background-color: rgba(22, 22, 22, 0.85);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--cor-texto-principal);
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+}
+
+.card-decisao-Killer_Survivor:hover {
+    transform: translateY(-6px);
+    border-color: var(--cor-vermelho-destaque);
+    box-shadow: 0 12px 30px rgba(255, 30, 39, 0.4);
+    color: var(--cor-amarelo-destaque);
+}

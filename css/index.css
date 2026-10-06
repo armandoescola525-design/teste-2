@@ -1,0 +1,76 @@
+@import url('global.css');
+
+body {
+    background: url('../imagem/img-geral/capa.png') no-repeat center/cover fixed;
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    min-height: 100vh;
+}
+
+section {
+    background-color: rgba(18, 18, 18, 0.75); 
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: white;
+    width: 90%;
+    max-width: 400px;  
+    text-align: center;
+    padding: 35px 25px;           
+    border-radius: 16px;      
+    box-shadow: 0 10px 32px rgba(0, 0, 0, 0.8);
+}
+
+/* Estilo do H1 ajustado para o formulário */
+section h1 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+input[type="date"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input[type="date"]:focus {
+    border-color: var(--cor-vermelho-destaque);
+    box-shadow: 0 0 10px rgba(255, 30, 39, 0.5);
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    border-radius: 8px;
+    border: none;
+    background: linear-gradient(135deg, var(--cor-vermelho-principal), var(--cor-vermelho-hover));
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(255, 30, 39, 0.4);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+#aviso {
+    margin-top: 15px;
+    font-weight: 500;
+}

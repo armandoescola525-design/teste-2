@@ -1,0 +1,182 @@
+@import url('global.css');
+
+/* ==========================================================================
+   SLIDER DE VÍDEOS
+   ========================================================================== */
+.slider-container-Killer_Survivor {
+    position: relative;
+    width: 90%; 
+    max-width: 700px;
+    margin: 25px auto;
+}
+
+.slider-videos-Killer_Survivor {
+    list-style: none;
+    width: 100%;
+    height: 380px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    background-color: #000;
+    box-shadow: var(--sombra-padrao);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.video-item-Killer_Survivor {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+}
+
+.video-item-Killer_Survivor.ativo-Killer_Survivor {
+    opacity: 1;
+    z-index: 1;
+}
+
+.video-item-Killer_Survivor video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video-item-Killer_Survivor span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.95), transparent);
+    color: var(--cor-texto-principal);
+    padding: 20px 15px 10px 15px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.seta-Killer_Survivor {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.7);
+    color: var(--cor-texto-principal);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 24px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.seta-Killer_Survivor:hover {
+    background-color: var(--cor-vermelho-principal);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.anterior-Killer_Survivor { left: 15px; }
+.proximo-Killer_Survivor { right: 15px; }
+
+/* ==========================================================================
+   CARDS DE DICAS
+   ========================================================================== */
+.container-dicas-Killer_Survivor {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 15px;
+    margin: 30px 0;
+}
+
+.card-dica-Killer_Survivor {
+    background-color: var(--cor-fundo-secundario);
+    border-left: 4px solid var(--cor-vermelho-principal);
+    color: var(--cor-texto-principal);
+    padding: 20px;
+    border-radius: 8px;
+    width: 260px;
+    height: 180px;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+    transition: all 0.3s ease;
+}
+
+.card-dica-Killer_Survivor:hover {
+    transform: translateY(-5px);
+    border-left-color: var(--cor-vermelho-destaque);
+    box-shadow: 0 8px 25px rgba(255, 30, 39, 0.3);
+}
+
+.blocoTitulo-Killer_Survivor {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--cor-amarelo-destaque);
+}
+
+.blocoParagrafo-Killer_Survivor {
+    opacity: 0;
+    transform: translateY(15px);
+    transition: all 0.4s ease;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    text-align: center;
+    color: var(--cor-texto-suave);
+}
+
+.card-dica-Killer_Survivor:hover .blocoParagrafo-Killer_Survivor {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ==========================================================================
+   GRID DE PERSONAGENS
+   ========================================================================== */
+.grid-killers-Killer_Survivor {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 25px;
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 20px 20px 50px 20px;
+}
+
+.card-killer-Killer_Survivor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.card-killer-Killer_Survivor img {
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-killer-Killer_Survivor a:hover img {
+    transform: scale(1.05);
+    border-color: var(--cor-vermelho-destaque);
+    box-shadow: 0 0 20px rgba(255, 30, 39, 0.6);
+}
+
+.card-killer-Killer_Survivor h3 {
+    margin-top: 10px;
+    font-size: 0.95rem;
+    color: #ff6666;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    header { height: 120px; }
+    .slider-videos-Killer_Survivor { height: 240px; }
+    .grid-killers-Killer_Survivor { grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); gap: 15px; }
+}

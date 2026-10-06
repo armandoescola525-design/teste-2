@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Killers - Dead by Daylight</title>
+    <link rel="stylesheet" href="css/lista.css">
+</head>
+
+<body>
+    <header></header>
+
+    <nav>
+        <a id="btn-alternar-lado" href="#">Alternar Lado</a>
+    </nav>
+
+    <section>
+        <video autoplay muted loop id="video-fundo-Killer_Survivor">
+            <source src="video/video-faisca.mp4" type="video/mp4">
+        </video>
+        <h2 id="descricao-Killer_Survivor"></h2>
+
+        <div class="slider-container-Killer_Survivor"> 
+            <ol id="video-slider-Killer_Survivor" class="slider-videos-Killer_Survivor">
+                <li class="video-item-Killer_Survivor ativo-Killer_Survivor">
+                    <video src="" autoplay loop muted></video>
+                    <span></span>
+                </li>
+                <li class="video-item-Killer_Survivor">
+                    <video src="" loop muted></video>
+                    <span></span>
+                </li>
+                <li class="video-item-Killer_Survivor">
+                    <video src="" loop muted></video>
+                    <span></span>
+                </li>
+            </ol>
+
+            <button class="seta-Killer_Survivor anterior-Killer_Survivor" onclick="mudarVideoManual(-1)">&#8249;</button>
+            <button class="seta-Killer_Survivor proximo-Killer_Survivor" onclick="mudarVideoManual(1)">&#8250;</button>
+        </div>
+
+        <main>
+            <div class="container-dicas-Killer_Survivor">
+                <a href="dicas.html?tipo=killer#chase">
+                    <section class="card-dica-Killer_Survivor">
+                        <h3 class="blocoTitulo-Killer_Survivor">Chase</h3>
+                        <p class="blocoParagrafo-Killer_Survivor"></p>
+                    </section>
+                </a>
+                <a href="dicas.html?tipo=killer#pressao">
+                    <section class="card-dica-Killer_Survivor">
+                        <h3 class="blocoTitulo-Killer_Survivor">Pressão</h3>
+                        <p class="blocoParagrafo-Killer_Survivor"></p>
+                    </section>
+                </a>
+                <a href="dicas.html?tipo=killer#perks">
+                    <section class="card-dica-Killer_Survivor">
+                        <h3 class="blocoTitulo-Killer_Survivor">Perks</h3>
+                        <p class="blocoParagrafo-Killer_Survivor"></p>
+                    </section>
+                </a>
+                <a href="dicas.html?tipo=killer#oferenda">
+                    <section class="card-dica-Killer_Survivor">
+                        <h3 class="blocoTitulo-Killer_Survivor">Oferenda</h3>
+                        <p class="blocoParagrafo-Killer_Survivor"></p>
+                    </section>
+                </a>
+            </div>
+        </main>
+    </section>
+
+    <section>
+        <h2 id="tituloKiller-Killer_Survivor"></h2>
+
+        <div class="grid-killers-Killer_Survivor">
+            <div class="card-killer-Killer_Survivor">
+                <a href="KillerSurvivor.html?killer=trapper">
+                    <img src="" alt="Killer Trapper do jogo Dead By Daylight">
+                </a>
+                <h3></h3>
+            </div>
+            <div class="card-killer-Killer_Survivor">
+                <a href="KillerSurvivor.html?killer=wraith">
+                    <img src="" alt="Killer Wraith do jogo Dead By Daylight">
+                </a>
+                <h3></h3>
+            </div>
+            <div class="card-killer-Killer_Survivor">
+                <a href="KillerSurvivor.html?killer=hillbilly">
+                    <img src="" alt="Killer Hillbilly do jogo Dead By Daylight">
+                </a>
+                <h3></h3>
+            </div>
+            <div class="card-killer-Killer_Survivor">
+                <a href="KillerSurvivor.html?killer=nurse">
+                    <img src="" alt="Killer Nurse do jogo Dead By Daylight">
+                </a>
+                <h3></h3>
+            </div>
+            <div class="card-killer-Killer_Survivor">
+                <a href="KillerSurvivor.html?killer=huntress">
+                    <img src="" alt="Killer Huntress do jogo Dead By Daylight">
+                </a>
+                <h3></h3>
+            </div>
+            <div class="card-killer-Killer_Survivor">
+                <a href="KillerSurvivor.html?killer=hag">
+                    <img src="" alt="Killer Hag do jogo Dead By Daylight">
+                </a>
+                <h3></h3>
+            </div>
+            <div class="card-killer-Killer_Survivor">
+                <a href="KillerSurvivor.html?killer=doctor">
+                    <img src="" alt="Killer Doctor do jogo Dead By Daylight">
+                </a>
+                <h3></h3>
+            </div>
+            <div class="card-killer-Killer_Survivor">
+                <a href="KillerSurvivor.html?killer=plague">
+                    <img src="" alt="Killer Plague do jogo Dead By Daylight">
+                </a>
+                <h3></h3>
+            </div>
+            <div class="card-killer-Killer_Survivor">
+                <a href="KillerSurvivor.html?killer=knight">
+                    <img src="" alt="Killer Knight do jogo Dead By Daylight">
+                </a>
+                <h3></h3>
+            </div>
+            <div class="card-killer-Killer_Survivor">
+                <a href="KillerSurvivor.html?killer=twins">
+                    <img src="" alt="Killer Twins do jogo Dead By Daylight">
+                </a>
+                <h3></h3>
+            </div>
+            <div class="card-killer-Killer_Survivor">
+                <a href="KillerSurvivor.html?killer=trapper">
+                    <img src="" alt="Killer Trapper do jogo Dead By Daylight">
+                </a>
+                <h3></h3>
+            </div>
+            <div class="card-killer-Killer_Survivor">
+                <a href="KillerSurvivor.html?killer=wraith">
+                    <img src="" alt="Killer Wraith do jogo Dead By Daylight">
+                </a>
+                <h3></h3>
+            </div>
+            <div class="card-killer-Killer_Survivor">
+                <a href="KillerSurvivor.html?killer=hillbilly">
+                    <img src="" alt="Killer Hillbilly do jogo Dead By Daylight">
+                </a>
+                <h3></h3>
+            </div>
+            <div class="card-killer-Killer_Survivor">
+                <a href="KillerSurvivor.html?killer=nurse">
+                    <img src="" alt="Killer Nurse do jogo Dead By Daylight">
+                </a>
+                <h3></h3>
+            </div>
+            <div class="card-killer-Killer_Survivor">
+                <a href="KillerSurvivor.html?killer=huntress">
+                    <img src="" alt="Killer Huntress do jogo Dead By Daylight">
+                </a>
+                <h3></h3>
+            </div>
+            <div class="card-killer-Killer_Survivor">
+                <a href="KillerSurvivor.html?killer=hag">
+                    <img src="" alt="Killer Hag do jogo Dead By Daylight">
+                </a>
+                <h3></h3>
+            </div>
+            <div class="card-killer-Killer_Survivor">
+                <a href="KillerSurvivor.html?killer=doctor">
+                    <img src="" alt="Killer Doctor do jogo Dead By Daylight">
+                </a>
+                <h3></h3>
+            </div>
+            <div class="card-killer-Killer_Survivor">
+                <a href="KillerSurvivor.html?killer=plague">
+                    <img src="" alt="Killer Plague do jogo Dead By Daylight">
+                </a>
+                <h3></h3>
+            </div>
+            <div class="card-killer-Killer_Survivor">
+                <a href="KillerSurvivor.html?killer=knight">
+                    <img src="" alt="Killer Knight do jogo Dead By Daylight">
+                </a>
+                <h3></h3>
+            </div>
+            <div class="card-killer-Killer_Survivor">
+                <a href="KillerSurvivor.html?killer=twins">
+                    <img src="" alt="Killer Twins do jogo Dead By Daylight">
+                </a>
+                <h3></h3>
+            </div>
+            <div class="card-killer-Killer_Survivor">
+                <a href="KillerSurvivor.html?killer=trapper">
+                    <img src="" alt="Killer Trapper do jogo Dead By Daylight">
+                </a>
+                <h3></h3>
+            </div>
+            <div class="card-killer-Killer_Survivor">
+                <a href="KillerSurvivor.html?killer=wraith">
+                    <img src="" alt="Killer Wraith do jogo Dead By Daylight">
+                </a>
+                <h3></h3>
+            </div>
+            <div class="card-killer-Killer_Survivor">
+                <a href="KillerSurvivor.html?killer=hillbilly">
+                    <img src="" alt="Killer Hillbilly do jogo Dead By Daylight">
+                </a>
+                <h3></h3>
+            </div>
+            <div class="card-killer-Killer_Survivor">
+                <a href="KillerSurvivor.html?killer=nurse">
+                    <img src="" alt="Killer Nurse do jogo Dead By Daylight">
+                </a>
+                <h3></h3>
+            </div>
+            <div class="card-killer-Killer_Survivor">
+                <a href="KillerSurvivor.html?killer=huntress">
+                    <img src="" alt="Killer Huntress do jogo Dead By Daylight">
+                </a>
+                <h3></h3>
+            </div>
+            <div class="card-killer-Killer_Survivor">
+                <a href="KillerSurvivor.html?killer=hag">
+                    <img src="" alt="Killer Hag do jogo Dead By Daylight">
+                </a>
+                <h3></h3>
+            </div>
+            <div class="card-killer-Killer_Survivor">
+                <a href="KillerSurvivor.html?killer=doctor">
+                    <img src="" alt="Killer Doctor do jogo Dead By Daylight">
+                </a>
+                <h3></h3>
+            </div>
+            <div class="card-killer-Killer_Survivor">
+                <a href="KillerSurvivor.html?killer=plague">
+                    <img src="" alt="Killer Plague do jogo Dead By Daylight">
+                </a>
+                <h3></h3>
+            </div>
+            <div class="card-killer-Killer_Survivor">
+                <a href="KillerSurvivor.html?killer=knight">
+                    <img src="" alt="Killer Knight do jogo Dead By Daylight">
+                </a>
+                <h3></h3>
+            </div>
+            <div class="card-killer-Killer_Survivor">
+                <a href="KillerSurvivor.html?killer=twins">
+                    <img src="" alt="Killer Twins do jogo Dead By Daylight">
+                </a>
+                <h3></h3>
+            </div>
+            <div class="card-killer-Killer_Survivor">
+                <a href="KillerSurvivor.html?killer=trapper">
+                    <img src="" alt="Killer Trapper do jogo Dead By Daylight">
+                </a>
+                <h3></h3>
+            </div>
+            <div class="card-killer-Killer_Survivor">
+                <a href="KillerSurvivor.html?killer=wraith">
+                    <img src="" alt="Killer Wraith do jogo Dead By Daylight">
+                </a>
+                <h3></h3>
+            </div>
+            <div class="card-killer-Killer_Survivor">
+                <a href="KillerSurvivor.html?killer=hillbilly">
+                    <img src="" alt="Killer Hillbilly do jogo Dead By Daylight">
+                </a>
+                <h3></h3>
+            </div>
+            <div class="card-killer-Killer_Survivor">
+                <a href="KillerSurvivor.html?killer=nurse">
+                    <img src="" alt="Killer Nurse do jogo Dead By Daylight">
+                </a>
+                <h3></h3>
+            </div>
+            <div class="card-killer-Killer_Survivor">
+                <a href="KillerSurvivor.html?killer=huntress">
+                    <img src="" alt="Killer Huntress do jogo Dead By Daylight">
+                </a>
+                <h3></h3>
+            </div>
+            <div class="card-killer-Killer_Survivor">
+                <a href="KillerSurvivor.html?killer=hag">
+                    <img src="" alt="Killer Hag do jogo Dead By Daylight">
+                </a>
+                <h3></h3>
+            </div>
+            <div class="card-killer-Killer_Survivor">
+                <a href="KillerSurvivor.html?killer=doctor">
+                    <img src="" alt="Killer Doctor do jogo Dead By Daylight">
+                </a>
+                <h3></h3>
+            </div>
+            <div class="card-killer-Killer_Survivor">
+                <a href="KillerSurvivor.html?killer=plague">
+                    <img src="" alt="Killer Plague do jogo Dead By Daylight">
+                </a>
+                <h3></h3>
+            </div>
+            <div class="card-killer-Killer_Survivor">
+                <a href="KillerSurvivor.html?killer=knight">
+                    <img src="" alt="Killer Knight do jogo Dead By Daylight">
+                </a>
+                <h3></h3>
+            </div>
+            <div class="card-killer-Killer_Survivor">
+                <a href="KillerSurvivor.html?killer=twins">
+                    <img src="" alt="Killer Twins do jogo Dead By Daylight">
+                </a>
+                <h3></h3>
+            </div>
+            <div class="card-killer-Killer_Survivor">
+                <a href="KillerSurvivor.html?killer=twins">
+                    <img src="" alt="Killer Twins do jogo Dead By Daylight">
+                </a>
+                <h3></h3>
+            </div>
+            <div class="card-killer-Killer_Survivor">
+                <a href="KillerSurvivor.html?killer=twins">
+                    <img src="" alt="Killer Twins do jogo Dead By Daylight">
+                </a>
+                <h3></h3>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <b id="rodaPe-Killer_Survivor">Instagram: @Mr.kibe - Coringas@2026</b>
+    </footer>
+    <script src="js/lista.js"></script>
+</body>
+</html>

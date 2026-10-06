@@ -1,0 +1,41 @@
+@import url('global.css');
+
+#pagina {
+    max-width: 900px;
+    margin: 20px auto 40px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+#pagina > section {
+    background: rgba(18, 18, 22, 0.95);
+    border: 1px solid #2a2b36;
+    border-left: 5px solid var(--cor-vermelho-destaque);
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7), 0 0 15px rgba(255, 30, 39, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#pagina > section:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.8), 0 0 20px rgba(255, 30, 39, 0.2);
+}
+
+/* O h2 herda o estilo global e adiciona apenas o estilo específico desta secção */
+#pagina section h2 {
+    border-bottom: 2px solid #2a2b36;
+    margin-bottom: 25px;
+}
+
+p {
+    color: var(--cor-texto-suave);
+    margin-bottom: 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+@media (max-width: 768px) {
+    #pagina > section { padding: 20px 15px; }
+}
